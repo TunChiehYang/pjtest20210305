@@ -1,1 +1,43 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@-webkit-keyframes myanimation {
+  from {
+    left: 10px;
+  }
+  to {
+    left: 600px;
+  }
+}
+
+@keyframes myanimation {
+  from {
+    left: 10px;
+  }
+  to {
+    left: 600px;
+  }
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  background-color: #db2b98;
+  border: 1px dotted black;
+  text-align: center;
+  line-height: 100px;
+  position: absolute;
+  -webkit-animation-name: myanimation;
+          animation-name: myanimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.box:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+/*# sourceMappingURL=style.css.map */
